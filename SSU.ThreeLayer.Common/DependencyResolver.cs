@@ -10,18 +10,18 @@ namespace SSU.ThreeLayer.Common
 {
     public static class DependencyResolver
     {
-        static private IBaseClients baseClients;
-        static private IClientLogic clientLogic;
+        static private IBaseFigures baseFigures;
+        static private IFigureLogic figureLogic;
 
-        static public IBaseClients BaseClients
+        static public IBaseFigures BaseFigures
         {
-            get => baseClients ?? (baseClients = new BaseClients());
+            get => baseFigures ?? (baseFigures = new BaseFigures());
 
         }
-        static public IClientLogic ClientLogic
+        static public IFigureLogic FigureLogic
         {
-            get => clientLogic ?? 
-            (clientLogic = new ClientLogic(BaseClients));
+            get => figureLogic ?? 
+            (figureLogic = new FigureLogic(BaseFigures));
         }
 
 

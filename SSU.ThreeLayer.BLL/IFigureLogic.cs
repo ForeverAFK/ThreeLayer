@@ -2,12 +2,11 @@
 using System.Collections;
 using SSU.ThreeLayer.Entities;
 
-namespace SSU.ThreeLayer.DAL
+namespace SSU.ThreeLayer.BLL
 {
-    public interface IBaseFigures
+    public interface IFigureLogic
     {
         void AddFigure(Figure figure);
-        void DeleteFigure(string name);
         void DeleteFigure(int index);
         IEnumerable GetAllFigures();
         Figure GetFigure(int index);

@@ -8,24 +8,24 @@ using System.Text;
 
 namespace SSU.ThreeLayer.DAL
 {
-    public class BaseClients : IBaseClients
+    public class BaseFigures : IBaseFigures
     {
         int index; //номер клиента, генерируется автоматически
-        Dictionary<int, Client> clients; //список клиентов
+        Dictionary<int, Figure> figures; //список клиентов
 
-        public BaseClients() //конструктор класса
+        public BaseFigures() //конструктор класса
         {
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream f = new FileStream("data.dat", FileMode.OpenOrCreate);
             if (f.Length == 0) //файл пуст, создаю новую базу
             {
-                clients = new Dictionary<int, Client>();
+                figures = new Dictionary<int, Figure>();
                 index = 0;
             }
             else // иначе выполняю дисериализацию
             {
-                clients = (Dictionary<int, Client>)formatter.Deserialize(f);
-                ICollection key = clients.Keys; // ищу последний ключ
+                figures = (Dictionary<int, Figure>)formatter.Deserialize(f);
+                ICollection key = figures.Keys; // ищу последний ключ
                 foreach (int item in key)
                 {
                     index = item;
@@ -34,74 +34,51 @@ namespace SSU.ThreeLayer.DAL
             f.Close();
 
         }
-        ~BaseClients()
+        ~BaseFigures()
         {
-            SaveBaseClients();
+            SaveBaseFigures();
         }
-        public void AddClient(Client client) //добавление нового клиента в хеш-таблицу:
-        { //ключ – index, значение – экземпляр класса Client
+        public void AddFigure(Figure figure) //добавление нового клиента в хеш-таблицу:
+        { //ключ – index, значение – экземпляр класса Figure
             index++;
-            client.id = index;
-            clients.Add(index, client);
+            figure.ID = index;
+            figures.Add(index, figure);
         }
-        //добавление информации о покупке по номеру клиента
-        public void AddBuying(int index, DateTime data, double sum)
+        public void DeleteFigure(int index)
         {
-            Client item = clients[index];
-            item.AddBuying(data, sum);
-        }
-        //добавление информации о покупке по фамилии клиента
-        public void AddBuying(string name, DateTime data, double sum)
-        {
-            ICollection key = clients.Keys; //прочитали все ключи
-            foreach (int index in key)
-            {
-                //использовуем ключ для получения значения хеш-таблицы
-                Client item = clients[index];
-                //если фамилия соответсвует фамиили клиента, то мы нашли нужного клиента
-                if (string.Compare(name, item.name) == 0)
-                {
-                    AddBuying(index, data, sum); //и добавляет новую покупку по текущему ключу
-                    break;
-                }
-            }
-        }
-        //удаляем клиента по номеру
-        public void DeleteClient(int index)
-        {
-            clients.Remove(index);
+            figures.Remove(index);
         }
         //удаляем клиента по фамилии
-        public void DeleteClient(string name)
+        public void DeleteFigure(string name)
         {
-            ICollection key = clients.Keys;
+            ICollection key = figures.Keys;
             foreach (int index in key)
             {
-                Client item = clients[index];
-                if (string.Compare(name, item.name) == 0)
+                Figure item = figures[index];
+                if (string.Compare(name, item.Name) == 0)
                 {
-                    DeleteClient(index);
+                    DeleteFigure(index);
                     break;
                 }
             }
         }
 
-        public Client GetClient(int index)
+        public Figure GetFigure(int index)
         {
-            return clients[index];
+            return figures[index];
         }
 
-        public IEnumerable GetAllClients()
+        public IEnumerable GetAllFigures()
         {
-            return clients.Values;
+            return figures.Values;
         }
 
-        void SaveBaseClients()
+        void SaveBaseFigures()
         {
             BinaryFormatter formatter = new BinaryFormatter();
             using (FileStream f = new FileStream("data.dat", FileMode.OpenOrCreate))
             {
-                formatter.Serialize(f, clients);
+                formatter.Serialize(f, figures);
             }
         }
                 
