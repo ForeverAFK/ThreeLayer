@@ -1,11 +1,10 @@
-﻿using SSU.ThreeLayer.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SSU.ThreeLayer.Entities
+namespace ThreeLayer.Entities
 {
 
     [Serializable]
@@ -35,7 +34,7 @@ namespace SSU.ThreeLayer.Entities
         public override string ToString()
         {
             float local_pi = (float)Math.PI;
-            return $"r = {Radius}, pi ~ {local_pi}";
+            return $"{Name}: r = {Radius}, pi ~ {local_pi}";
         }
 
         public override void Set(params float[] arr)
