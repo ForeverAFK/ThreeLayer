@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Xml.Serialization;
 
-namespace SSU.ThreeLayer.Entities
+namespace ThreeLayer.Entities
 {
     [Serializable]
 
@@ -17,12 +17,12 @@ namespace SSU.ThreeLayer.Entities
         }
         public FigureRectangle(float SideA) : base("Rectangle") // квадрат
         {
-            this.SideA = this.SideB = SideA;
+            this.SideA = SideB = SideA;
         }
         public FigureRectangle(FigureRectangle item) : base("Rectangle") // копирования
         {
-            this.SideA = item.SideA;
-            this.SideB = item.SideB;
+            SideA = item.SideA;
+            SideB = item.SideB;
 
         }
         public override float FigurePerimeter()
@@ -35,7 +35,7 @@ namespace SSU.ThreeLayer.Entities
         }
         public override string ToString()
         {
-            return $"(a = {SideA}, b = {SideB})";
+            return $"{Name}: a = {SideA}, b = {SideB}";
         }
 
         public override void Set(params float[] arr)
