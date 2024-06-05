@@ -22,7 +22,7 @@ namespace ThreeLayer.DAL
                 figures = new Dictionary<int, Figure>();
                 index = 0;
             }
-            else // иначе выполняю дисериализацию
+            else // иначе выполняю десериализацию
             {
                 figures = (Dictionary<int, Figure>)formatter.Deserialize(f);
                 ICollection key = figures.Keys; // ищу последний ключ

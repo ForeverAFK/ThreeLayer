@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ThreeLayer.BLL;
 using SSU.ThreeLayer.Common;
-using ThreeLayer.Entities;
+using SSU.ThreeLayer.Entities;
 
 namespace SSU.ThreeLayer.GraphicPL
 {
     public partial class Form1 : Form
     {
         IFigureLogic figure_logic = DependencyResolver.FigureLogic;
+        Stack<ComboBoxStyle> stack = new Stack<ComboBoxStyle>(1);
         public Form1()
         {
             InitializeComponent();
@@ -39,32 +40,54 @@ namespace SSU.ThreeLayer.GraphicPL
             {
                 case "Rectangle":
                     {
-                        int a = int.Parse(tbA.Text);
-                        int b = (tbB.Text != null) ? int.Parse(tbB.Text) : a;
-                        fig = new FigureRectangle(a, b); 
-                        checkedListBox.Items.Add(fig.ToString());
-                        figure_logic.AddFigure(fig);
+                        try
+                        {
+                            int a = int.Parse(tbA.Text);
+                            int b = (tbB.Text != null) ? int.Parse(tbB.Text) : a;
+                            fig = new FigureRectangle(a, b);
+
+                            checkedListBox.Items.Add(fig.ToString());
+                            figure_logic.AddFigure(fig);
+                        }
+                        catch//(Exception.)
+                        {
+                            ClearTextBoxes();
+                        }
                         ClearTextBoxes();
                         break;
                     }
                 case "Triangle":
                     {
-                        int a = int.Parse(tbA.Text);
-                        int b = (tbB.Text != null) ? int.Parse(tbB.Text) : a;
-                        int c = (tbR.Text != null) ? int.Parse(tbR.Text) : a;
-                        fig = new FigureTriangle(a, b, c); 
-                        checkedListBox.Items.Add(fig.ToString());
-                        figure_logic.AddFigure(fig);
+                        try
+                        {
+                            int a = int.Parse(tbA.Text);
+                            int b = (tbB.Text != null) ? int.Parse(tbB.Text) : a;
+                            int c = (tbR.Text != null) ? int.Parse(tbR.Text) : a;
+                            fig = new FigureTriangle(a, b, c);
+                            checkedListBox.Items.Add(fig.ToString());
+                            figure_logic.AddFigure(fig);
+                        }
+                        catch
+                        {
+                            ClearTextBoxes();
+                        }
                         ClearTextBoxes();
                         break; 
                     }
                 case "Circle":
                     {
-                        int r = int.Parse(tbR.Text);
-                        fig = new FigureCircle(r);
-                        checkedListBox.Items.Add(fig.ToString());
-                        figure_logic.AddFigure(fig);
-                        ClearTextBoxes();
+                        try
+                        {
+                            int r = int.Parse(tbR.Text);
+                            fig = new FigureCircle(r);
+                            checkedListBox.Items.Add(fig.ToString());
+                            figure_logic.AddFigure(fig);
+                        }
+                        catch
+                        {
+                            ClearTextBoxes();
+                        }
+                            ClearTextBoxes();
                         break;
                     }
                 default:
@@ -77,11 +100,13 @@ namespace SSU.ThreeLayer.GraphicPL
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            //if (checkedListBox.Ca)
-                {
-                foreach (var item in checkedListBox.CheckedItems.OfType<string>().ToList())
-                    checkedListBox.Items.Remove(item);
-            }
+            foreach (var item in checkedListBox.CheckedItems.OfType<Figure>().ToList())
+                checkedListBox.Items.Remove(item);
+            
+        }
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            checkedListBox.Items.Clear();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -92,9 +117,12 @@ namespace SSU.ThreeLayer.GraphicPL
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-
-            checkedListBox.Items.Add(figure_logic.GetAllFigures());
-            MessageBox.Show("Loaded Successfully");
+            foreach (Figure fig in figure_logic.GetAllFigures())
+            {
+                checkedListBox.Items.Add(fig);
+                //checkedListBox.Items.Count.
+            }
+             MessageBox.Show("Loaded Successfully");
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -116,10 +144,23 @@ namespace SSU.ThreeLayer.GraphicPL
                     tbA.Enabled = false;
                     tbB.Enabled = false;
                     tbR.Enabled = true;
+                    label3.Text = "R=";
                     break;
                 default:
                     break;
             }
+        }
+
+        private void comboBox1_DropDown(object sender, EventArgs e)
+        {
+            comboBox1.Text = null;
+            comboBox1.ForeColor = Color.Black;
+        }
+
+        private void comboBox1_DropDownClosed(object sender, EventArgs e)
+        {
+            comboBox1.Text = "Figure Type";
+            comboBox1.ForeColor = Color.LightGray;
         }
     }
 }
