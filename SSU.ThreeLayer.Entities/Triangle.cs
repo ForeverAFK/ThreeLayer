@@ -1,8 +1,7 @@
-﻿using SSU.ThreeLayer.Entities;
 using System;
 using System.Xml.Serialization;
 
-namespace SSU.ThreeLayer.Entities
+namespace ThreeLayer.Entities
 {
     [Serializable]
 
@@ -22,14 +21,14 @@ namespace SSU.ThreeLayer.Entities
         public FigureTriangle(float SideA) : base("Triangle")
         {
             this.SideA = SideA;
-            this.SideB = SideA;
-            this.SideC = SideA;
+            SideB = SideA;
+            SideC = SideA;
         }
         public FigureTriangle(FigureTriangle item) : base("Triangle")
         {
-            this.SideA = item.SideA;
-            this.SideB = item.SideB;
-            this.SideC = item.SideC;
+            SideA = item.SideA;
+            SideB = item.SideB;
+            SideC = item.SideC;
         }
         public override float FigurePerimeter()
         {
@@ -37,12 +36,12 @@ namespace SSU.ThreeLayer.Entities
         }
         public override float FigureArea()
         {
-            float p = this.FigurePerimeter() / 2;
+            float p = FigurePerimeter() / 2;
             return (float)Math.Sqrt(p * (p - SideA) * (p - SideB) * (p - SideC));
         }
         public override string ToString()
         {
-            return $"a = {SideA}, b = {SideB}, c = {SideC}";
+            return $"{Name}: a = {SideA}, b = {SideB}, c = {SideC}";
         }
 
         public override void Set(params float[] arr)
