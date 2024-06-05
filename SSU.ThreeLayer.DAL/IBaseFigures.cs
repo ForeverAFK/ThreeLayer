@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections;
-using SSU.ThreeLayer.Entities;
+using ThreeLayer.Entities;
 
-namespace SSU.ThreeLayer.DAL
+namespace ThreeLayer.DAL
 {
     public interface IBaseFigures
     {
@@ -11,5 +11,6 @@ namespace SSU.ThreeLayer.DAL
         void DeleteFigure(int index);
         IEnumerable GetAllFigures();
         Figure GetFigure(int index);
-    }
+        void SaveBaseFigures();
+     }
 }

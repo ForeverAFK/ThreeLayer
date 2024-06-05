@@ -1,0 +1,14 @@
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\obj\Debug\netstandard2.0\ThreeLayer.DAL.csproj.AssemblyReference.cache
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\obj\Debug\netstandard2.0\ThreeLayer.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\obj\Debug\netstandard2.0\ThreeLayer.DAL.AssemblyInfoInputs.cache
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\obj\Debug\netstandard2.0\ThreeLayer.DAL.AssemblyInfo.cs
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\obj\Debug\netstandard2.0\ThreeLayer.DAL.csproj.CoreCompileInputs.cache
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\obj\Debug\netstandard2.0\ThreeLayer.DAL.sourcelink.json
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\bin\Debug\netstandard2.0\ThreeLayer.DAL.deps.json
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\bin\Debug\netstandard2.0\ThreeLayer.DAL.dll
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\bin\Debug\netstandard2.0\ThreeLayer.DAL.pdb
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\bin\Debug\netstandard2.0\ThreeLayer.Entities.dll
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\bin\Debug\netstandard2.0\ThreeLayer.Entities.pdb
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\obj\Debug\netstandard2.0\ThreeLay.85A5F04C.Up2Date
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\obj\Debug\netstandard2.0\ThreeLayer.DAL.dll
+C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\obj\Debug\netstandard2.0\ThreeLayer.DAL.pdb

@@ -1,12 +1,12 @@
-﻿using SSU.ThreeLayer.Entities;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using ThreeLayer.Entities;
 
-namespace SSU.ThreeLayer.DAL
+namespace ThreeLayer.DAL
 {
     public class BaseFigures : IBaseFigures
     {
@@ -73,7 +73,7 @@ namespace SSU.ThreeLayer.DAL
             return figures.Values;
         }
 
-        void SaveBaseFigures()
+        public void SaveBaseFigures()
         {
             BinaryFormatter formatter = new BinaryFormatter();
             using (FileStream f = new FileStream("data.dat", FileMode.OpenOrCreate))
@@ -81,6 +81,6 @@ namespace SSU.ThreeLayer.DAL
                 formatter.Serialize(f, figures);
             }
         }
-                
+
     }
 }

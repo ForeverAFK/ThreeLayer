@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections;
-using SSU.ThreeLayer.Entities;
+using ThreeLayer.Entities;
 
-namespace SSU.ThreeLayer.BLL
+namespace ThreeLayer.BLL
 {
     public interface IFigureLogic
     {
@@ -10,5 +10,6 @@ namespace SSU.ThreeLayer.BLL
         void DeleteFigure(int index);
         IEnumerable GetAllFigures();
         Figure GetFigure(int index);
+        void SaveAllFigures();
     }
 }

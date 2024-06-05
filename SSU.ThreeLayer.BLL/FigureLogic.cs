@@ -1,11 +1,11 @@
-﻿using SSU.ThreeLayer.DAL;
-using SSU.ThreeLayer.Entities;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using ThreeLayer.DAL;
+using ThreeLayer.Entities;
 
-namespace SSU.ThreeLayer.BLL
+namespace ThreeLayer.BLL
 {
     public class FigureLogic : IFigureLogic
     {
@@ -36,6 +36,10 @@ namespace SSU.ThreeLayer.BLL
         public IEnumerable GetAllFigures()
         {
             return baseFigures.GetAllFigures();
+        }
+        public void SaveAllFigures()
+        {
+            baseFigures.SaveBaseFigures();
         }
 
     }

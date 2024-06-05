@@ -1,10 +1,11 @@
-﻿using SSU.ThreeLayer.BLL;
-using SSU.ThreeLayer.DAL;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ThreeLayer.BLL;
+using ThreeLayer.DAL;
 
 namespace SSU.ThreeLayer.Common
 {
