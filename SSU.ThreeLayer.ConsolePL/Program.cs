@@ -13,8 +13,8 @@ namespace SSU.ThreeLayer.ConsolePL
             IFigureLogic figure_logic = DependencyResolver.FigureLogic;
 
             Console.WriteLine("Исходная выгрузка");
-            //Show(figure_logic);
-
+            Show(figure_logic);
+            Console.WriteLine();
             //figure_logic.AddFigure(new FigureRectangle(2, 2));
             //figure_logic.AddFigure(new FigureTriangle(3, 4, 5));
             //figure_logic.AddFigure(new FigureCircle(4));
@@ -51,16 +51,17 @@ namespace SSU.ThreeLayer.ConsolePL
                             figure_logic.DeleteFigure(int.Parse(inData[1]));
                             break;
                         }
+                    case "SHW":
+                        Show(figure_logic);
+                        break;
                     case "END":
                         isRunning = false;
                         break;
                     default:
                         break;
                 }
-                
-            }
-            //figure_logic.DeleteFigure(2);
 
+            }
         }
 
         static void Show(IFigureLogic figureLogic)

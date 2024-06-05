@@ -41,6 +41,7 @@
             this.tbB = new System.Windows.Forms.TextBox();
             this.tbR = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnSort = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkedListBox
@@ -98,7 +99,7 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.MenuText;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Circle",
@@ -111,9 +112,7 @@
             this.comboBox1.TabIndex = 5;
             this.comboBox1.Text = "Figure Type";
             this.comboBox1.UseWaitCursor = true;
-            this.comboBox1.DropDown += new System.EventHandler(this.comboBox1_DropDown);
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            this.comboBox1.DropDownClosed += new System.EventHandler(this.comboBox1_DropDownClosed);
             // 
             // label1
             // 
@@ -179,11 +178,22 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // btnSort
+            // 
+            this.btnSort.Location = new System.Drawing.Point(249, 233);
+            this.btnSort.Name = "btnSort";
+            this.btnSort.Size = new System.Drawing.Size(92, 28);
+            this.btnSort.TabIndex = 13;
+            this.btnSort.Text = "Sort";
+            this.btnSort.UseVisualStyleBackColor = true;
+            this.btnSort.Click += new System.EventHandler(this.btnSort_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(360, 366);
+            this.Controls.Add(this.btnSort);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.tbR);
             this.Controls.Add(this.tbB);
@@ -220,6 +230,7 @@
         private System.Windows.Forms.TextBox tbB;
         private System.Windows.Forms.TextBox tbR;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnSort;
     }
 }
 

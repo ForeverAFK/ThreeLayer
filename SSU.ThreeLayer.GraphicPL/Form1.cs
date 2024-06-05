@@ -16,11 +16,10 @@ namespace SSU.ThreeLayer.GraphicPL
     public partial class Form1 : Form
     {
         IFigureLogic figure_logic = DependencyResolver.FigureLogic;
-        Stack<ComboBoxStyle> stack = new Stack<ComboBoxStyle>(1);
         public Form1()
         {
-            InitializeComponent();
-            //checkedListBox.Sorted = true;
+            InitializeComponent(); 
+            checkedListBox.Sorted = false;
             //checkedListBox.SelectionMode = SelectionMode.MultiExtended;
         }
 
@@ -117,12 +116,13 @@ namespace SSU.ThreeLayer.GraphicPL
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            foreach (Figure fig in figure_logic.GetAllFigures())
+            var gibFigurz = figure_logic.GetAllFigures();
+            foreach (Figure fig in gibFigurz)
             {
                 checkedListBox.Items.Add(fig);
-                //checkedListBox.Items.Count.
+                //figure_logic.AddFigure(fig);
             }
-             MessageBox.Show("Loaded Successfully");
+            MessageBox.Show("Loaded Successfully");
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -151,16 +151,11 @@ namespace SSU.ThreeLayer.GraphicPL
             }
         }
 
-        private void comboBox1_DropDown(object sender, EventArgs e)
+        private void btnSort_Click(object sender, EventArgs e)
         {
-            comboBox1.Text = null;
-            comboBox1.ForeColor = Color.Black;
-        }
-
-        private void comboBox1_DropDownClosed(object sender, EventArgs e)
-        {
-            comboBox1.Text = "Figure Type";
-            comboBox1.ForeColor = Color.LightGray;
+            checkedListBox.Sorted = true;
+            MessageBox.Show("Sorted by figure area");
+            checkedListBox.Sorted = false;
         }
     }
 }
