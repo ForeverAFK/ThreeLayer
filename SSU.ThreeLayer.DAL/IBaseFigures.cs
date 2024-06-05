@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-using ThreeLayer.Entities;
+using SSU.ThreeLayer.Entities;
 
 namespace ThreeLayer.DAL
 {

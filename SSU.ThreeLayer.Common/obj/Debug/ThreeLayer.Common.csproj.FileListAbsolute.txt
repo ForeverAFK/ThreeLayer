@@ -11,3 +11,16 @@ C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\bin\Debug\
 C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\obj\Debug\ThreeLay.F4181C1D.Up2Date
 C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\obj\Debug\SSU.ThreeLayer.Common.dll
 C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\obj\Debug\SSU.ThreeLayer.Common.pdb
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\bin\Debug\SSU.ThreeLayer.Common.dll
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\bin\Debug\SSU.ThreeLayer.Common.pdb
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\bin\Debug\ThreeLayer.BLL.dll
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\bin\Debug\ThreeLayer.DAL.dll
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\bin\Debug\ThreeLayer.Entities.dll
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\bin\Debug\ThreeLayer.BLL.pdb
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\bin\Debug\ThreeLayer.DAL.pdb
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\bin\Debug\ThreeLayer.Entities.pdb
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\obj\Debug\ThreeLayer.Common.csproj.AssemblyReference.cache
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\obj\Debug\ThreeLayer.Common.csproj.CoreCompileInputs.cache
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\obj\Debug\ThreeLayer.Common.csproj.CopyComplete
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\obj\Debug\SSU.ThreeLayer.Common.dll
+C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.Common\obj\Debug\SSU.ThreeLayer.Common.pdb

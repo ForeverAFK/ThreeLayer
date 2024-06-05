@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ThreeLayer.BLL;
 using SSU.ThreeLayer.Common;
-using ThreeLayer.Entities;
+using SSU.ThreeLayer.Entities;
 
 
 namespace SSU.ThreeLayer.GraphicPL

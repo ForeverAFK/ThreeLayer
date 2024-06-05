@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9WGjkD/A5Uz+c6/41gmIpzb1Vopp+nxkGgARYNu0UywaVaNfR/20QC8p+tkiDbYPpAI7uPfZTmaMhsDd3o8TbA==",
+  "dgSpecHash": "8qj62+W8nvreJKOvXdguqkX3xTtO60+fDJ10ucaKqM0TM+kCudK7i7iwQwmvtsJdMRMIjUs7TdHfUcFyTcj5ag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LIA\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.DAL\\ThreeLayer.DAL.csproj",
+  "projectFilePath": "C:\\Users\\lavrentev_ia\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.DAL\\ThreeLayer.DAL.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\lavrentev_ia\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\lavrentev_ia\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

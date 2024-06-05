@@ -1,7 +1,7 @@
 using System;
 using System.Xml.Serialization;
 
-namespace ThreeLayer.Entities
+namespace SSU.ThreeLayer.Entities
 {
     [Serializable]
 
