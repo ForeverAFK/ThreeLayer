@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using ThreeLayer.DAL;
-using ThreeLayer.Entities;
+using SSU.ThreeLayer.Entities;
 
 namespace ThreeLayer.BLL
 {

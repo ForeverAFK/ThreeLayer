@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LIA\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.DAL\\ThreeLayer.DAL.csproj": {}
+    "C:\\Users\\lavrentev_ia\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.DAL\\ThreeLayer.DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LIA\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.DAL\\ThreeLayer.DAL.csproj": {
+    "C:\\Users\\lavrentev_ia\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.DAL\\ThreeLayer.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LIA\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.DAL\\ThreeLayer.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\lavrentev_ia\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.DAL\\ThreeLayer.DAL.csproj",
         "projectName": "ThreeLayer.DAL",
-        "projectPath": "C:\\Users\\LIA\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.DAL\\ThreeLayer.DAL.csproj",
-        "packagesPath": "C:\\Users\\LIA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LIA\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.DAL\\obj\\",
+        "projectPath": "C:\\Users\\lavrentev_ia\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.DAL\\ThreeLayer.DAL.csproj",
+        "packagesPath": "C:\\Users\\lavrentev_ia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lavrentev_ia\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\LIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lavrentev_ia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +32,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\LIA\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.Entities\\ThreeLayer.Entities.csproj": {
-                "projectPath": "C:\\Users\\LIA\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.Entities\\ThreeLayer.Entities.csproj"
+              "C:\\Users\\lavrentev_ia\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.Entities\\ThreeLayer.Entities.csproj": {
+                "projectPath": "C:\\Users\\lavrentev_ia\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.Entities\\ThreeLayer.Entities.csproj"
               }
             }
           }
@@ -41,11 +42,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -65,29 +61,29 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\LIA\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.Entities\\ThreeLayer.Entities.csproj": {
+    "C:\\Users\\lavrentev_ia\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.Entities\\ThreeLayer.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LIA\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.Entities\\ThreeLayer.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\lavrentev_ia\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.Entities\\ThreeLayer.Entities.csproj",
         "projectName": "ThreeLayer.Entities",
-        "projectPath": "C:\\Users\\LIA\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.Entities\\ThreeLayer.Entities.csproj",
-        "packagesPath": "C:\\Users\\LIA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LIA\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.Entities\\obj\\",
+        "projectPath": "C:\\Users\\lavrentev_ia\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.Entities\\ThreeLayer.Entities.csproj",
+        "packagesPath": "C:\\Users\\lavrentev_ia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lavrentev_ia\\Source\\Repos\\ForeverAFK\\ThreeLayer\\SSU.ThreeLayer.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\LIA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lavrentev_ia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -107,11 +103,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -131,12 +122,11 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }

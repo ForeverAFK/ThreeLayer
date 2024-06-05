@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThreeLayer.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+deb36ef03a7a11273978a1b7ed5ecaa103851f98")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThreeLayer.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThreeLayer.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

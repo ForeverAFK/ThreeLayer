@@ -1,4 +1,4 @@
-﻿using SSU.ThreeLayer.BLL;
+﻿using ThreeLayer.BLL;
 using SSU.ThreeLayer.Common;
 using SSU.ThreeLayer.Entities;
 using System;

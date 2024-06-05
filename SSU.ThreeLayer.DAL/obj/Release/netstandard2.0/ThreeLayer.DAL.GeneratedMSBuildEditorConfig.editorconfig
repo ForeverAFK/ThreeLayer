@@ -1,5 +1,3 @@
 is_global = true
 build_property.RootNamespace = ThreeLayer.DAL
-build_property.ProjectDir = C:\Users\LIA\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\lavrentev_ia\Source\Repos\ForeverAFK\ThreeLayer\SSU.ThreeLayer.DAL\
